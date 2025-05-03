@@ -1,0 +1,73 @@
+.toolbar {
+    display: flex;
+    align-items: center;
+    padding: 8px 10px;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #dee2e6;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    gap: 15px; /* Space between sections */
+    height: auto; /* Allow height to adjust based on content */
+    min-height: 40px; /* Minimum height */
+    box-sizing: border-box;
+  }
+  
+  .tool-section {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Space between items within a section */
+  }
+  
+  .tool-button {
+    padding: 6px 12px;
+    font-size: 0.9em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+    min-width: 60px; /* Ensure buttons have a minimum width */
+    text-align: center;
+  }
+  
+  .tool-button:hover {
+    background-color: #e9ecef;
+    border-color: #bbb;
+  }
+  
+  .tool-button.active {
+    background-color: #007bff;
+    color: white;
+    border-color: #0056b3;
+  }
+  
+  .tool-button:disabled {
+      background-color: #e9ecef;
+      color: #6c757d;
+      cursor: not-allowed;
+      border-color: #ced4da;
+  }
+  
+  
+  .draw-options label,
+  .draw-options input {
+      margin-left: 5px;
+      font-size: 0.9em;
+  }
+  
+  .draw-options input[type="color"] {
+      width: 30px;
+      height: 25px;
+      padding: 0;
+      border: 1px solid #ccc;
+      cursor: pointer;
+      vertical-align: middle; /* Align better with labels */
+  }
+  
+  .draw-options input[type="number"] {
+      width: 50px;
+      height: 23px;
+      padding: 2px 5px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      vertical-align: middle; /* Align better with labels */
+  }
